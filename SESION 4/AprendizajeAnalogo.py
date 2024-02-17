@@ -5,10 +5,10 @@ from sklearn.neighbors import NearestNeighbors
 import numpy as np
 
 #Datos conocidos (Entrenamiento)
-X_train = np.array ([[1, 2], [2, 3], [3, 4], [4, 5], [5, 6]])
+X_train = np.array ([[1, 2], [2, 3], [3, 4], [4, 5], [5, 6],[6,7],[7,8]])
 
 #Datos desconocidos (Nuevas Observaciones)
-X_unknown = np.array ([[1.5, 2.5],[3.5, 4.5]])
+X_unknown = np.array ([[1.5, 2.5],[3.5, 4.5],[5.5, 7.5]])
 
 #Crear y ajustar el modelo de vecinos mas cercanos (Nearest Neighbors)
 model = NearestNeighbors(n_neighbors=2)
